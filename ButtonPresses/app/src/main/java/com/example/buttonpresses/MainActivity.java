@@ -2,6 +2,7 @@ package com.example.buttonpresses;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,5 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void decrement(View view) {
         text.setText("Button pressed " + (--i) + " times!");
+    }
+
+    public void colorer(View view) {
+        text.setTextColor(Color.RED);
     }
 }

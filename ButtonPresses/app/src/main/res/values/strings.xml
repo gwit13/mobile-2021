@@ -3,4 +3,5 @@
     <string name="text1">Print a fun message to logcat!</string>
     <string name="button1text">:)</string>
     <string name="button2text">:(</string>
+    <string name="fontbuttontext">Color the text!</string>
 </resources>
