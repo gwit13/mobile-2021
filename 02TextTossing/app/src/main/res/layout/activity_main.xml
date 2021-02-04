@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello, input name!"
+        android:text="@string/name_display"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,23 +23,24 @@
         app:layout_constraintVertical_bias="0.448" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/text_input_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Right here!"
+        android:text="@string/name_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/display" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/confirm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirm"
+        android:text="@string/button_confirm"
+        android:onClick="nameConfirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/text_input_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
