@@ -12,6 +12,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     Button button;
     TextView text;
+    int random;
+    int color;
     int i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void colorer(View view) {
-        text.setTextColor(Color.RED);
+        random = (int)(Math.random()*5);
+        switch (random) {
+            case 0: color = Color.RED;
+            break;
+            case 1: color = Color.GREEN;
+            break;
+            case 2: color = Color.BLUE;
+            break;
+            case 3: color = Color.rgb(255, 0, 255);
+            break;
+            default: color = Color.rgb(255, 128, 0);
+            break;
+        }
+        text.setTextColor(color);
     }
 }
