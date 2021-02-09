@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Text Tossing</string>
-    <string name="name_display">Input name!</string>
+    <string name="name_display">Name</string>
     <string name="name_input">Right here!</string>
     <string name="button_confirm">Confirm</string>
+    <string name="graduating_class">Class</string>
+    <string name="favorite_monkey">Favorite Monkey</string>
 </resources>
