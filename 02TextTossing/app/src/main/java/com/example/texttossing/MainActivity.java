@@ -46,4 +46,8 @@ public class MainActivity extends AppCompatActivity {
             views[field].setTextColor(Color.RED);
         }
     }
+
+    public void cycleThrough(View view) {
+
+    }
 }
