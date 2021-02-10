@@ -8,7 +8,6 @@
     <string-array name="names">
         <item>Gabriel</item>
         <item>Ignacio</item>
-        <item>Onur</item>
         <item>Mr. Tra</item>
         <item>Socks</item>
         <item>Nicholas J. Rising</item>
@@ -16,17 +15,15 @@
     <string-array name="classes">
         <item>2022</item>
         <item>2022</item>
-        <item>2025</item>
         <item>2012</item>
         <item>2036</item>
         <item>2022</item>
     </string-array>
     <string-array name="monkeys">
-        <item>Bonobo</item>
+        <item>Harambe</item>
         <item>Gibbon</item>
-        <item>onimonke</item>
         <item>The one with the orange butt</item>
         <item>Proboscis Monkey</item>
-        <item>nicomonke</item>
+        <item>Curious George</item>
     </string-array>
 </resources>
