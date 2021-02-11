@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         for(int i = 0; i < res.getStringArray(R.array.names).length; i++) {
             namesMut.add(res.getStringArray(R.array.names)[i]);
-            classesMut.add(res.getStringArray(R.array.names)[i]);
-            monkeysMut.add(res.getStringArray(R.array.names)[i]);
+            classesMut.add(res.getStringArray(R.array.classes)[i]);
+            monkeysMut.add(res.getStringArray(R.array.monkeys)[i]);
         }
 
         views[0] = name;
@@ -71,13 +71,15 @@ public class MainActivity extends AppCompatActivity {
     public void cycleThrough(View view) {
         for(TextView t : views)
             t.setTextColor(Color.BLUE);
-        views[0].setText(res.getStringArray(R.array.names)[presetInterator]);
-        views[1].setText(res.getStringArray(R.array.classes)[presetInterator]);
-        views[2].setText(res.getStringArray(R.array.monkeys)[presetInterator]);
-        presetInterator = (++presetInterator%(res.getStringArray(R.array.names).length));
+        views[0].setText(namesMut.get(presetInterator));
+        views[1].setText(classesMut.get(presetInterator));
+        views[2].setText(monkeysMut.get(presetInterator));
+        presetInterator = (++presetInterator%(namesMut.size()));
     }
 
     public void save(View view) {
-        
+        namesMut.add(views[0].getText().toString());
+        classesMut.add(views[1].getText().toString());
+        monkeysMut.add(views[2].getText().toString());
     }
 }
