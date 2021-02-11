@@ -5,6 +5,8 @@
     <string name="button_confirm">Confirm</string>
     <string name="graduating_class">Class</string>
     <string name="favorite_monkey">Favorite Monkey</string>
+    <string name="save_current">Save Current to Presets!</string>
+    <string name="cycle">Cycle through presets!</string>
     <string-array name="names">
         <item>Gabriel</item>
         <item>Ignacio</item>
