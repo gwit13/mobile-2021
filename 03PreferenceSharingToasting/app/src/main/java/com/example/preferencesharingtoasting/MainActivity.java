@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     TextView green, red, yellow, blue, temp;
+    SeekBar seekBar;
+    int maxSeek;
     Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         context = getApplicationContext();
         sharedPreferences = getSharedPreferences("Counters", MODE_PRIVATE);
         editor = sharedPreferences.edit();
+        seekBar = findViewById(R.id.seekBar);
+        maxSeek = seekBar.getMax();
         green = findViewById(R.id.view1);
         red = findViewById(R.id.view2);
         yellow = findViewById(R.id.view3);
