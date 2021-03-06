@@ -24,6 +24,46 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
+
+        <activity android:name=".Activity3"
+            android:label="@string/activity3"
+            android:parentActivityName=".Activity2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity2"/>
+        </activity>
+
+        <activity android:name=".Activity4"
+            android:label="@string/activity4"
+            android:parentActivityName=".Activity3">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity3"/>
+        </activity>
+
+        <activity android:name=".Activity5"
+            android:label="@string/activity5"
+            android:parentActivityName=".Activity4">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity4"/>
+        </activity>
+
+        <activity android:name=".Activity6"
+            android:label="@string/activity6"
+            android:parentActivityName=".Activity5">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity5"/>
+        </activity>
+
+        <activity android:name=".Activity7"
+            android:label="View 7"
+            android:parentActivityName=".Activity6">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity6"/>
+        </activity>
     </application>
 
 </manifest>

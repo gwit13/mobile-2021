@@ -1,21 +1,22 @@
 package com.example.layoutswitchingpracticing;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
-
+public class Activity7 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_7);
+        Intent intent = getIntent();
     }
 
     public void next(View view) {
-        Intent intent = new Intent(getApplicationContext(), Activity2.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
+        //finish();
     }
 }

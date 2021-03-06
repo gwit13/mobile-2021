@@ -39,6 +39,8 @@
         android:id="@+id/view10"
         android:layout_width="112dp"
         android:layout_height="104dp"
+        android:background="@color/teal_200"
+        android:onClick="next"
         app:layout_constraintBottom_toTopOf="@+id/view11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -48,6 +50,8 @@
         android:id="@+id/view11"
         android:layout_width="119dp"
         android:layout_height="116dp"
+        android:background="@color/teal_200"
+        android:onClick="next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
